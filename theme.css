@@ -1,0 +1,346 @@
+:root {
+    color-scheme: dark;
+
+    /* Quiet neutral surfaces; the logo palette is reserved for meaning. */
+    --apt-bg-0: #111419;
+    --apt-bg-1: #171B21;
+    --apt-bg-2: #1D232A;
+    --apt-bg-3: #252D35;
+    --apt-ink: #DCE1E3;
+    --apt-ink-soft: #AFBAC0;
+    --apt-muted: #788690;
+    --apt-border: #39434B;
+    --apt-primary: #496C7A;
+    --apt-orange: #B56D35;
+    --apt-gold: #BF9955;
+    --apt-cyan: #72A5B1;
+    --apt-green: #7F9B80;
+
+    --b3-theme-primary: var(--apt-primary);
+    --b3-theme-primary-light: rgba(73, 108, 122, 0.20);
+    --b3-theme-primary-lighter: rgba(73, 108, 122, 0.13);
+    --b3-theme-primary-lightest: rgba(73, 108, 122, 0.08);
+    --b3-theme-secondary: var(--apt-cyan);
+    --b3-theme-background: var(--apt-bg-0);
+    --b3-theme-surface: var(--apt-bg-1);
+    --b3-theme-surface-light: var(--apt-bg-2);
+    --b3-theme-error: #C66C62;
+    --b3-theme-on-primary: #F3F5F4;
+    --b3-theme-on-secondary: #101418;
+    --b3-theme-on-background: var(--apt-ink);
+    --b3-theme-on-surface: var(--apt-ink);
+    --b3-border-color: rgba(151, 169, 178, 0.18);
+    --b3-scroll-color: rgba(151, 169, 178, 0.24);
+    --b3-list-hover: rgba(114, 165, 177, 0.12);
+    --b3-theme-background-light: rgba(255, 255, 255, 0.035);
+    --b3-theme-surface-lighter: rgba(255, 255, 255, 0.055);
+    --b3-card-error-color: #E2C1BC;
+    --b3-card-error-background: rgba(198, 108, 98, 0.15);
+    --b3-card-warning-color: #E2D1AE;
+    --b3-card-warning-background: rgba(191, 153, 85, 0.15);
+    --b3-card-info-color: #C4D9DE;
+    --b3-card-info-background: rgba(114, 165, 177, 0.14);
+    --b3-card-success-color: #CAD8CA;
+    --b3-card-success-background: rgba(127, 155, 128, 0.15);
+    --b3-font-color: var(--apt-ink);
+    --b3-font-color1: #C48655;
+    --b3-font-color2: var(--apt-gold);
+    --b3-font-color3: var(--apt-cyan);
+    --b3-font-color4: var(--apt-green);
+    --b3-font-color5: var(--apt-ink-soft);
+    --b3-font-color6: #79A8B2;
+    --b3-font-color7: var(--apt-gold);
+    --b3-font-color8: var(--b3-theme-error);
+    --b3-font-color9: #B889A6;
+    --b3-font-color10: #6EA5A0;
+    --b3-font-color11: #8FA47F;
+    --b3-font-color12: #C0A865;
+    --b3-font-color13: var(--b3-theme-background);
+    --b3-font-background1: rgba(181, 109, 53, 0.11);
+    --b3-font-background2: rgba(191, 153, 85, 0.11);
+    --b3-font-background3: rgba(114, 165, 177, 0.12);
+    --b3-font-background4: rgba(127, 155, 128, 0.12);
+    --b3-font-background5: rgba(175, 186, 192, 0.10);
+    --b3-font-background6: rgba(121, 168, 178, 0.12);
+    --b3-font-background7: rgba(191, 153, 85, 0.11);
+    --b3-font-background8: rgba(198, 108, 98, 0.13);
+    --b3-font-background9: rgba(184, 137, 166, 0.11);
+    --b3-font-background10: rgba(110, 165, 160, 0.11);
+    --b3-font-background11: rgba(143, 164, 127, 0.11);
+    --b3-font-background12: rgba(192, 168, 101, 0.12);
+    --b3-font-background13: var(--b3-theme-on-background);
+
+    /* Native SiYuan state coverage */
+    --b3-theme-success: #7F9B80;
+    --b3-theme-on-surface-light: #C4CDD1;
+    --b3-theme-on-surface-lighter: #66737C;
+    --b3-theme-on-error: #FFF7F5;
+    --b3-body-background: #171B20;
+    --b3-body-background-hl-opacity: 0.16;
+    --b3-body-background-hl: 197, 25%, 42%;
+    --b3-toolbar-color: var(--b3-theme-on-surface-light);
+    --b3-toolbar-hover: rgba(255, 255, 255, 0.055);
+    --b3-menu-background: var(--apt-bg-1);
+    --b3-menu-icon-color: rgba(220, 225, 227, 0.70);
+    --b3-tooltips-background: #0C0F13;
+    --b3-tooltips-color: var(--apt-ink);
+    --b3-tooltips-second-color: var(--apt-muted);
+    --b3-tooltips-shadow: 0 4px 14px rgba(0, 0, 0, 0.46);
+    --b3-empty-color: var(--apt-muted);
+    --b3-mask-background: rgba(6, 9, 12, 0.58);
+    --b3-highlight-color: #F2E8D2;
+    --b3-highlight-background: #554423;
+    --b3-highlight-current-background: #72502A;
+    --b3-switch-background: #394047;
+    --b3-switch-border: #98A5AC;
+    --b3-switch-hover: rgba(255, 255, 255, 0.08);
+    --b3-switch-checked: #F3F5F4;
+    --b3-switch-checked-background: var(--apt-primary);
+    --b3-switch-checked-hover: #4B7180;
+    --b3-switch-checked-hover2: rgba(255, 255, 255, 0.07);
+    --b3-dock-shadow-color: #070A0E;
+    --b3-point-shadow: inset 0 1px rgba(255, 255, 255, 0.08), 0 3px 8px rgba(0, 0, 0, 0.27);
+    --b3-dialog-shadow: 0 16px 44px rgba(0, 0, 0, 0.46), 0 0 0 1px rgba(220, 225, 227, 0.08);
+    --b3-button-shadow: 0 1px 2px rgba(0, 0, 0, 0.30);
+    --b3-button-active-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.34);
+    --b3-graph-p-point: var(--apt-primary);
+    --b3-graph-heading-point: #98A9C5;
+    --b3-graph-math-point: var(--apt-green);
+    --b3-graph-code-point: var(--apt-cyan);
+    --b3-graph-table-point: #6499B0;
+    --b3-graph-list-point: #C48655;
+    --b3-graph-todo-point: var(--apt-gold);
+    --b3-graph-olist-point: #A58565;
+    --b3-graph-listitem-point: var(--apt-orange);
+    --b3-graph-bq-point: #8D86A8;
+    --b3-graph-callout-point: var(--b3-theme-success);
+    --b3-graph-super-point: #A49AB8;
+    --b3-graph-doc-point: var(--apt-ink);
+    --b3-graph-tag-point: #97A36D;
+    --b3-graph-asset-point: #6A9E97;
+    --b3-graph-line: rgba(220, 225, 227, 0.42);
+    --b3-graph-ref-line: var(--b3-theme-error);
+    --b3-graph-tag-line: #5F6A43;
+    --b3-graph-tag-tag-line: #97A36D;
+    --b3-graph-asset-line: #3F706B;
+    --b3-graph-hl-point: var(--apt-gold);
+    --b3-graph-hl-line: var(--apt-orange);
+    --b3-protyle-code-background: rgba(181, 109, 53, 0.07);
+    --b3-protyle-inline-link-color: var(--apt-cyan);
+    --b3-protyle-inline-mark-background: #554423;
+    --b3-protyle-inline-mark-color: var(--apt-ink);
+    --b3-protyle-inline-tag-color: #A9B3B8;
+    --b3-protyle-inline-blockref-color: #98A9C5;
+    --b3-protyle-inline-fileref-color: var(--apt-gold);
+    --b3-callout-note: var(--apt-cyan);
+    --b3-callout-tip: var(--b3-theme-success);
+    --b3-callout-caution: var(--b3-theme-error);
+    --b3-callout-important: #98A9C5;
+    --b3-callout-warning: var(--apt-gold);
+    --b3-table-even-background: rgba(255, 255, 255, 0.026);
+    --b3-av-gallery-shadow: 0 2px 5px rgba(0, 0, 0, 0.18), 0 0 0 1px var(--b3-border-color);
+    --b3-embed-background: transparent;
+    --b3-bq-background: transparent;
+    --b3-parent-background: var(--b3-theme-background);
+}
+
+body {
+    background: var(--apt-bg-0);
+    color: var(--apt-ink);
+}
+
+.toolbar,
+.layout-tab-bar,
+.dock {
+    background: #13171C;
+    border-color: var(--b3-border-color);
+}
+
+.b3-menu,
+.b3-dialog__container,
+.block__popover,
+.search__layout,
+.config__tab-container {
+    background: var(--apt-bg-1);
+    border-color: var(--b3-border-color);
+    box-shadow: 0 14px 38px rgba(0, 0, 0, 0.32);
+}
+
+.protyle-breadcrumb,
+.protyle-toolbar {
+    background: rgba(23, 27, 33, 0.96);
+    border-color: var(--b3-border-color);
+}
+
+.b3-list-item:hover,
+.b3-menu__item:hover {
+    background: rgba(255, 255, 255, 0.045);
+    color: var(--apt-ink);
+}
+
+.b3-list-item--focus,
+.b3-menu__item--current,
+.layout-tab-bar .item--focus {
+    background: var(--b3-theme-primary-lighter);
+    color: var(--apt-ink);
+}
+
+.layout-tab-bar .item--focus,
+.b3-button--text {
+    color: var(--apt-cyan);
+}
+
+.b3-button {
+    background: var(--apt-primary);
+    color: var(--b3-theme-on-primary);
+    border-color: rgba(155, 190, 202, 0.22);
+}
+
+.b3-button:hover {
+    background: #4B7180;
+    color: #FFFFFF;
+}
+
+.protyle-title__input {
+    color: var(--apt-ink);
+}
+
+.protyle-wysiwyg [data-node-id] {
+    caret-color: var(--apt-orange);
+}
+
+.protyle-wysiwyg [data-node-id]:hover {
+    background: rgba(255, 255, 255, 0.025);
+}
+
+.protyle-wysiwyg ::selection,
+.protyle-title__input::selection,
+::selection {
+    background: rgba(73, 108, 122, 0.48);
+    color: #F3F5F4;
+}
+
+.protyle-wysiwyg a,
+.b3-typography a,
+.protyle-breadcrumb__item--active {
+    color: var(--apt-cyan);
+}
+
+.protyle-wysiwyg blockquote,
+.b3-typography blockquote {
+    background: rgba(114, 165, 177, 0.07);
+    border-left: 3px solid rgba(114, 165, 177, 0.65);
+    color: var(--apt-ink-soft);
+}
+
+.protyle-wysiwyg code:not(.hljs),
+.b3-typography code:not(.hljs) {
+    background: rgba(181, 109, 53, 0.07);
+    color: #D5A16F;
+    border: 1px solid rgba(181, 109, 53, 0.14);
+}
+
+.protyle-wysiwyg pre,
+.b3-typography pre,
+.hljs {
+    background: #14181D;
+    color: var(--apt-ink);
+    border: 1px solid var(--b3-border-color);
+}
+
+.hljs-keyword,
+.hljs-selector-tag,
+.hljs-title.function_ {
+    color: #C48655;
+}
+
+.hljs-string,
+.hljs-attr,
+.hljs-symbol {
+    color: var(--apt-gold);
+}
+
+.hljs-number,
+.hljs-literal,
+.hljs-built_in {
+    color: var(--apt-cyan);
+}
+
+.hljs-comment,
+.hljs-quote {
+    color: var(--apt-muted);
+    font-style: italic;
+}
+
+.protyle-wysiwyg table,
+.b3-typography table {
+    background: rgba(255, 255, 255, 0.018);
+    border-color: var(--b3-border-color);
+}
+
+.protyle-wysiwyg th,
+.b3-typography th {
+    background: rgba(114, 165, 177, 0.08);
+    color: var(--apt-ink);
+}
+
+.protyle-wysiwyg td,
+.protyle-wysiwyg th,
+.b3-typography td,
+.b3-typography th {
+    border-color: var(--b3-border-color);
+}
+
+.protyle-wysiwyg mark,
+.b3-typography mark {
+    background: rgba(191, 153, 85, 0.19);
+    color: var(--apt-ink);
+}
+
+.b3-text-field,
+.b3-text-field.fn__block,
+.b3-select {
+    background: var(--apt-bg-2);
+    color: var(--apt-ink);
+    border-color: var(--b3-border-color);
+}
+
+.b3-button--text,
+.b3-button--cancel {
+    background: transparent;
+    border-color: transparent;
+    box-shadow: none;
+    color: var(--apt-cyan);
+}
+
+.b3-button--outline {
+    background: transparent;
+    border-color: rgba(114, 165, 177, 0.48);
+    color: var(--apt-cyan);
+}
+
+.b3-button--remove,
+.b3-button--warning {
+    background: #784944;
+    border-color: #A05E57;
+    color: #FFF7F5;
+}
+
+.b3-button:disabled,
+.b3-button[disabled],
+.b3-text-field:disabled,
+.b3-select:disabled,
+.fn__disabled {
+    cursor: not-allowed;
+    opacity: 0.48;
+}
+
+:where(button, a, input, select, textarea, [tabindex]):focus-visible {
+    outline: 2px solid rgba(114, 165, 177, 0.82);
+    outline-offset: 2px;
+}
+
+.protyle-wysiwyg a:visited,
+.b3-typography a:visited {
+    color: #A49AB8;
+}
