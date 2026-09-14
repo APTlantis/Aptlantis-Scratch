@@ -1,15 +1,15 @@
-# Aptlantis Blue Scratch
+# Aptlantis Scratch
 
 A dark SiYuan theme adapted from the Aptlantis Scratch logo palette.
 
-Blue Scratch uses quiet neutral-slate surfaces for long writing sessions, then brings in the logo's cyan water tones and a softened dose of orange Scratch-cat energy. Orange and warm gold remain available for meaningful emphasis without dominating code blocks or marked text.
+Scratch uses quiet neutral-slate surfaces for long writing sessions, then brings in the logo's cyan water tones and a softened dose of orange Scratch-cat energy. Orange and warm gold remain available for meaningful emphasis without dominating code blocks or marked text.  
 
 ## Source Material
 
-- Logo: `bluescratch-refs/apt-scratch-logo.png`
-- Extracted 16-color palette: `bluescratch-refs/apt-scratch-logo-palette.txt`
-- JetBrains reference theme: `bluescratch-refs/apt-scratch-theme.icls`
-- Terminal reference theme: `bluescratch-refs/apt-scratch.json`
+- Logo: `scratch-refs/apt-scratch-logo.png`
+- Extracted 16-color palette: `scratch-refs/apt-scratch-logo-palette.txt`
+- JetBrains reference theme: `scratch-refs/apt-scratch-theme.icls`
+- Terminal reference theme: `scratch-refs/apt-scratch.json`
 
 ## Package Files
 
